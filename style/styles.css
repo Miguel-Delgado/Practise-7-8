@@ -274,246 +274,111 @@ body {
     box-sizing: border-box;
 }
 
+/* Общие исправления для предотвращения горизонтального скролла */
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.page-container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.content {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 @media (max-width: 768px) {
-    .page-container {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
-    .content {
-        width: 100%;
-        max-width: 100%;
-        padding: 20px 10px;
-    }
-
-    .header {
-        padding: 20px;
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .nav-link {
-        padding: 10px 20px;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .profile-title {
-        font-size: 28px;
-    }
-
-    .profile-photo {
-        width: 150px;
-        height: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
-    .profile-name {
-        font-size: 20px;
-    }
-
-    .profile-group {
-        font-size: 16px;
-    }
-
-    .about-me {
-        padding: 20px;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .skills-container {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .skill-tag {
-        padding: 10px 20px;
-        font-size: 12px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .section-title {
-        font-size: 24px;
-    }
-
-    .experience-section {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
     .experience-card {
-        padding: 20px;
-        width: 100%;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 15px 10px;
+        padding: 15px;
+        transform: none !important; /* Убираем трансформацию на мобильных */
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+        box-sizing: border-box;
     }
-
+    
     .experience-title {
-        font-size: 18px;
+        font-size: 1.1rem;
+        line-height: 1.4;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
     }
-
-    .contact-info {
-        padding: 20px;
-        text-align: center;
+    
+    .experience-desc {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        text-align: left;
     }
-
-    .footer {
-        padding: 20px;
-        text-align: center;
+    
+    /* Убедимся, что контент не выходит за границы */
+    .content {
+        padding: 10px;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    
+    /* Адаптируем другие элементы для мобильных */
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-title {
+        font-size: 1.5rem;
+    }
+    
+    .profile-name {
+        font-size: 1.2rem;
+    }
+    
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-item {
+        margin: 5px;
+    }
+    
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skill-tag {
+        width: 90%;
+        margin: 5px 0;
     }
 }
 
 @media (max-width: 480px) {
-    body, html {
-        overflow-x: hidden;
-    }
-
-    .page-container {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 5px;
-    }
-
-    .content {
-        width: 100%;
-        max-width: 100%;
-        padding: 15px 5px;
-    }
-
-    .header {
-        padding: 15px;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .nav {
-        padding: 10px 0;
-    }
-
-    .nav-list {
-        gap: 5px;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .nav-link {
-        padding: 8px 15px;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .profile-title {
-        font-size: 24px;
-    }
-
-    .profile-photo {
-        width: 120px;
-        height: 160px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
-    .profile-name {
-        font-size: 18px;
-    }
-
-    .profile-group {
-        font-size: 14px;
-    }
-
-    .about-me {
-        padding: 15px;
-        font-size: 13px;
-        text-align: center;
-    }
-
-    .skills-container {
-        gap: 10px;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .skill-tag {
-        padding: 8px 15px;
-        font-size: 11px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .section-title {
-        font-size: 20px;
-    }
-
-    .experience-section {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
     .experience-card {
-        padding: 15px;
-        margin: 15px 0;
-        width: 100%;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        hyphens: auto;
-        white-space: normal;
-        word-break: break-word;
+        margin: 10px 5px;
+        padding: 12px;
     }
-
+    
     .experience-title {
-        font-size: 16px;
+        font-size: 1rem;
     }
-
+    
     .experience-desc {
-        font-size: 14px;
+        font-size: 0.85rem;
     }
-
-    .news-item,
-    .product {
-        padding: 15px;
-        margin: 15px 0;
+    
+    .profile-header {
+        padding: 15px 10px;
     }
-
-    .contact-info {
-        padding: 15px;
-        text-align: center;
-    }
-
-    .contact-info p {
-        font-size: 16px;
-    }
-
-    .contact-info button {
-        padding: 12px 25px;
-        font-size: 14px;
-    }
-
-    .footer {
-        padding: 15px;
-        text-align: center;
+    
+    .about-me {
+        margin: 15px 5px;
+        padding: 10px;
     }
 }
