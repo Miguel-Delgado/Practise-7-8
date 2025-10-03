@@ -267,3 +267,234 @@ body {
     padding: 30px;
     margin-top: 50px;
 }
+
+/* ==== ОТЗЫВЧИВЫЙ ДИЗАЙН ==== */
+
+/* Планшеты и маленькие экраны */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 10px 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-title {
+        font-size: 28px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .profile-name {
+        font-size: 20px;
+    }
+
+    .profile-group {
+        font-size: 16px;
+    }
+
+    .about-me {
+        padding: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .skills-container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .skill-tag {
+        padding: 10px 20px;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .experience-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experience-card {
+        padding: 20px;
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .experience-title {
+        font-size: 18px;
+    }
+
+    .contact-info {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* Телефоны */
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    .nav-list {
+        gap: 5px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 8px 15px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .content {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-title {
+        font-size: 24px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .profile-name {
+        font-size: 18px;
+    }
+
+    .profile-group {
+        font-size: 14px;
+    }
+
+    .about-me {
+        padding: 15px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .skills-container {
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .skill-tag {
+        padding: 8px 15px;
+        font-size: 11px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .experience-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experience-card {
+        padding: 15px;
+        margin: 15px 0;
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .experience-title {
+        font-size: 16px;
+    }
+
+    .experience-desc {
+        font-size: 14px;
+    }
+
+    .news-item,
+    .product {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .contact-info {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+
+    .contact-info button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 15px;
+        text-align: center;
+    }
+}
